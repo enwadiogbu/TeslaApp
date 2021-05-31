@@ -1,31 +1,32 @@
-import { Container } from '@material-ui/core';
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
+import MenuIcon from '@material-ui/icons/Menu';
 
 function Header() {
-    return (
+  return (
         <Container>
                 <a href='#'>
                     <img src='/images/logo.svg' />
                 </a>
-            <MenuGroup>
-                <div>Model S</div>
-                <div>Model X</div>
-                <div>Model Y</div>
-            </MenuGroup>
-            <RightMenu>
-                <a href='#'>Shop</a>
-                <a href='#'>Tesla Account</a>
-                <MenuIconContainer>
+                <MenuGroup>
+                    <div>Model S</div>
+                    <div>Model X</div>
+                    <div>Model Y</div>
+                </MenuGroup>
+                <RightMenu>
+                    <a href='#'>Shop</a>
+                    <a href='#'>Tesla Account</a>
+                    <MenuIconContainer>
 
-                </MenuIconContainer>
-            </RightMenu>
+                    </MenuIconContainer>
+                </RightMenu>
         </Container>
 
-    );
+  );
 }
 
-export default Header
+export default Header;
+
 
 const Container = styled.div`
     display: flex;

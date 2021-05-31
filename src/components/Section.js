@@ -1,18 +1,17 @@
 import React from 'react'
+import styled from 'styled-components';
 
-function Section(props) {
+function Section() {
     return (
-        <Container bgImage={""}>
+        <Container bgImg={""}>
             <ItemText>
-                <h1>{props.title}</h1>
-                <p>{props.description}</p>
+                <h1>Model S</h1>
+                <p>Order Online for Touchless Delivery</p>
             </ItemText>
             <ButtonGroup>
-                <LeftBotton>{props.leftBtnText}</LeftBotton>
-                <RightButton>{props.rightBtnText}</RightButton>
-
+                <LeftButton>Custom Order</LeftButton>
+                <RightButton>Existing Inventory</RightButton>
             </ButtonGroup>
-            
         </Container>
     )
 }
@@ -23,21 +22,23 @@ const Container = styled.div`
     background-color: blue;
     width: 100%;
     height: 100vh;
-    background-image: ${props => `url(/images/${props.bgImage}')`};
+    background-image: url("/images/model-s.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
-    align-items: center;
     flex-diretion: column;
 `
 const ItemText = styled.div`
     padding-top: 15vh;
     text-align: center;
+    flex-grow: 1;
 `
 
 const ButtonGroup = styled.div`
-
+    display: flex;
+    align-self: flex-end;
+    margin-bottom: 30px;
 `
 
 const LeftButton = styled.div`
