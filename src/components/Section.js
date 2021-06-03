@@ -31,12 +31,16 @@ const Container = styled.div`
     display: flex;
     flex-direcion: column;
     align-items: center;
+    position: relative;
+    
 
 `
 const ItemText = styled.div`
     padding-top: 15vh;
     text-align: center;
     flex-grow: 1;
+    position: absolute;
+
 `
 
 const ButtonGroup = styled.div`
